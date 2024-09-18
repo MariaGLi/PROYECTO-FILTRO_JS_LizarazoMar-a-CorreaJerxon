@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(22,25,70);
+    background: radial-gradient(circle, rgb(17, 19, 58) 0%, rgba(19,20,43,1) 100%);
+    overflow: hidden;
+}
+.Cuerpo{
+    display: flex;
+}
+.Contents{
+    display: flex;
+    flex-direction: column;
+}
+.Nav1{
+    background-color: blue;
+    height: 47em;
+    width: 15vw;
+}
+header{
+    width: 84em;
+    height: 6em;
+    background-color: aqua;
+}
+.Head{
+    background-color: rgb(0, 0, 0);
+    width: 84em;
+    height: 6em;
+    
+}
+.Content{
+    background-color: brown;
+    width: 84em;
+    height: 35em;
+}
+.Nav2{
+    background-color: chocolate;
+    height: 47em;
+    width: 15vw;
+}
+footer{
+    background-color: bisque;
+    width: 100vw;
+    height: 12em;
+}
