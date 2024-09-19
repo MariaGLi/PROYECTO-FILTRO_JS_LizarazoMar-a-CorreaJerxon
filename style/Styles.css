@@ -117,7 +117,8 @@ svg{
 }
 :root{
     --bar-color: #2e314d;
-    --fill-size: 60%
+    --fill-size: 20%
+    
 }
 .ProgressBar{
     position: relative;
