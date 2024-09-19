@@ -10,8 +10,8 @@
     font-family: "Roboto";
 }
 body{
-    background: rgb(22,25,70);
-    background: radial-gradient(circle, rgb(17, 19, 58) 0%, rgba(19,20,43,1) 100%);
+    background-image: url(/Storage/img/Background.png);
+    background-size: contain;
     overflow: hidden;
 }
 .Cuerpo{
@@ -29,6 +29,9 @@ body{
     gap: 2em;
     padding-top: 6em;
     padding-left: 2em;
+}
+.Nav1 p{
+    color: #9499c3;
 }
 header{
     width: 84em;
@@ -63,9 +66,28 @@ header{
     top: -8em;
     z-index: 1;
 }
-.Box15,.Box16{
+.Box17,.Box16{
     display: flex;
     gap: 1em;
+}
+.Box18{
+    width: 15em;
+    margin-top: 2em;
+}
+.Box18 h2{
+    line-height: 2.5em;
+    font-weight: 300;
+    color: #9499c3;
+}
+.Text p{
+    color: #9499c3;
+}
+.Text{
+    display: flex;
+    line-height: 2em;
+}
+.MainText{
+    width: 10em;
 }
 .Nav2{
     height: 47em;
@@ -95,7 +117,7 @@ svg{
 }
 :root{
     --bar-color: #2e314d;
-    --fill-size: 20%
+    --fill-size: 60%
 }
 .ProgressBar{
     position: relative;
@@ -142,20 +164,45 @@ svg{
 footer{
     display: flex;
     justify-content: center;
+    border-bottom: 9em solid #1a1c48;
 }
 .CajaBottom{
-    width: 30vw;
-    height: 20em;
+    width: 25vw;
+    height: 5em;
     background-color: #1a1c48;
-    margin-top: -0.5em;
+    margin-top:-1em;
+    border-top-left-radius: 17.5px;
+    border-top-right-radius: 17.5px;
 }
 .CajaBottom::after{
     content: "";
-    width: 30vw;
-    height: 20em;
-    background-color: #1a1c48;
     position: relative;
-    left: -4em;
+    margin-top: 10px;
+    right: 461px;
+    top: -48px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 68px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 79px solid #1a1c48;
+}
+.CajaBottom::before{
+    content: "";
+    position: relative;
+    margin-top: 10px;
+    right: -473.7px;
+    top: -48px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 68px solid transparent;
+    border-bottom: 79px solid #1a1c48;
+}
+.CajaBottom i{
+    transform: scale(2);
+    padding: 2em;
 }
 
 @keyframes fill-bar {
