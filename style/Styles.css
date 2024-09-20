@@ -156,37 +156,17 @@ footer{
     transform: rotate(-90deg);
     margin-bottom: -4.5em;
 }
-
-.Box16 span{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    left: 0%;
-    top:0%;
-    display: flex;
+.Box16{
+    margin-right: 20em;
+    height: 20em;
     justify-content: center;
-    align-items: center;
-    transform: rotate(90deg);
-    font-size: 0.8em;
+    flex-direction: column;
 }
-.Circle3{
-    fill: none;
-    stroke: #298bfe;
-    stroke-width: 10;
-    stroke-dasharray: var(--Porcen) 100;
-    transform-origin: 50%;
-    transform: rotate(-90deg);
-    margin-bottom: -4.5em;
+.Box16 i{
+    transform: scale(2);
+    cursor: pointer;
 }
-.Circle4{
-    fill: none;
-    stroke: #298bfe;
-    stroke-width: 10;
-    stroke-dasharray: var(--Porcen) 100;
-    transform-origin: 50%;
-    transform: rotate(-90deg);
-    margin-bottom: -4.5em;
-}
+
 .ProgressBar1,.ProgressBar2,.ProgressBar3,.ProgressBar4,.ProgressBar5,.ProgressBar6,.ProgressBar7{
     position: relative;
     width: 185px;

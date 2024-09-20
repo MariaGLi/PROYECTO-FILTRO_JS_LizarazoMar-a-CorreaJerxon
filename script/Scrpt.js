@@ -1,4 +1,3 @@
-const NameVehicle = document.getElementById("NameVehicle");
 
 //Boxs
 const Box18 = document.querySelector(".Box18");
@@ -8,6 +7,7 @@ const HistoryContent = document.querySelector(".HistoryContent");
 
 //Objects
 const RocketImg = document.getElementById("Rocket");
+const NameVehicle = document.getElementById("NameVehicle");
 
 //Icons
 const Check1 = document.getElementById("Check1");
@@ -18,13 +18,20 @@ const Check5 = document.getElementById("Check5");
 const Check6 = document.getElementById("Check6");
 const Check7 = document.getElementById("Check7");
 
+//Buttons
+const UpBtn = document.getElementById("UpImg");
+const DownBtn = document.getElementById("DownImg");
+
 fetch("https://api.spacexdata.com/v4/rockets")
 .then(Res =>Res.json())
 .then(Data =>{
     
     //Rocket Position
-
     let Position = 0
+
+    document.addEventListener("keydown",()=>{
+        Position+=1
+    })
 
     //Operations
 
@@ -36,6 +43,8 @@ fetch("https://api.spacexdata.com/v4/rockets")
     let ThrustSeaLevel = Data[Position].first_stage.thrust_sea_level.kN+"Kn"
     let ThrustVacuum = Data[Position].first_stage.thrust_vacuum.kN+"Kn"
 
+    let PositionImg = 0
+
     //Name Vehicle
     NameVehicle.textContent = Data[Position].name
 
@@ -44,7 +53,17 @@ fetch("https://api.spacexdata.com/v4/rockets")
 
     HistoryContent.innerHTML = `<p>${Data[Position].description}</p>`;
 
-    RocketImg.src = Data[Position].flickr_images[0]
+    RocketImg.src = Data[Position].flickr_images[PositionImg]
+
+    UpBtn.addEventListener("click",() => {
+        PositionImg += 1
+        RocketImg.src = Data[Position].flickr_images[PositionImg]
+    })
+    DownBtn.addEventListener("click",() =>{
+        PositionImg -= 1
+        RocketImg.src = Data[Position].flickr_images[PositionImg]
+    })
+    
 
     Box18.innerHTML = `
         <h2>Engine</h2>
@@ -123,5 +142,5 @@ fetch("https://api.spacexdata.com/v4/rockets")
     `
 })
 function WaitsColor(){
-    
+
 }
