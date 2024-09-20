@@ -40,9 +40,7 @@ header p{
     margin-top: 1.5em;
     font-size: 1.5em;
 }
-.imagen{
-    width: 100vw;
-}
+
 .imagen img{
     width: 50em;
     transform: rotate(-45deg);
@@ -50,14 +48,18 @@ header p{
     left: 75em;
     top: -26em;
 }
-.twit{
-    width: 40em;
+.caja{
+    background-color: bisque;
+    width: 80em;
+}
+/*.twit{ 
+    width: 50em;
     height: 4em;
     position: relative;
     bottom: 70em;
     display: flex;
     justify-content: space-evenly;
-    margin-left: 13em;
+    margin-left: 11em;
 }
 .twit a{
     text-decoration: none;
@@ -109,7 +111,44 @@ header p{
                 0 0 10px rgb(0,140,255),
                 0 0 20px rgb(0,140,255);
 }
-
+.btn{
+    width: 10em;
+    height: 2em;
+    cursor: pointer;
+}
+.btn a{
+    text-decoration: none;
+}
+.boton_next{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 12em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.url::after{
+    content: "Camper: María Lizarazo";
+}
+.url2::after{
+    content: "Camper: Jerxon Correa";
+}
+.boton_next{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.boton_next:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+*/
 /* Responsive IPHON 14 PRO MAX */
 @media screen and (max-width: 1000px){
     .container{
@@ -159,8 +198,37 @@ header p{
 }
 @media screen and (max-width: 500px){
     .imagen img{
-        width: 25em;
-        left: 6em;
-        top: -2em;
+        display: none;
     }
+    .twit{
+        width: 35em;
+        color: white;
+        
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: -7em;
+    }
+    .a1{
+        font-size: 1em;
+        border: 1px solid black;
+        height: 2em;
+        width: 9em;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .a2{
+        font-size: 1em;
+        border: 1px solid black;
+        height: 2em;
+        width: 9em;
+        text-align: center;
+        border-radius: 12px;
+    }
+    .url::after{
+        content: "María Lizarazo";
+    }
+    .url2::after{
+        content: "Jerxon Correa";
+    }
+    
 }
