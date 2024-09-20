@@ -11,7 +11,7 @@
 }
 body{
     background-image: url(/Storage/img/Background.png);
-    background-size: contain;
+    background-size: cover;
     overflow: hidden;
 }
 .Cuerpo{
@@ -20,6 +20,10 @@ body{
 .Contents{
     display: flex;
     flex-direction: column;
+}
+.HistoryContent{
+    width: 50em;
+    text-align: center;
 }
 .Nav1{
     height: 47em;
@@ -55,15 +59,19 @@ header{
 
 .Rocket{
     margin-top: -5em;
+    margin-left: 3em;
     display: flex;
     flex-direction: column;
 }
 #Rocket{
     z-index: 3;
+    width: 30em;
+    height: 50em;
+    border-radius: 2em;
+    box-shadow: 5px 5px 20px #1a1c48;
 }
 #Shadow{
     position: relative;
-    top: -8em;
     z-index: 1;
 }
 .Box17,.Box16{
@@ -102,6 +110,9 @@ footer{
 .Nav1 h5, p{
     color: #9499c3;
 }
+.Nav1 P{
+    opacity: 40%;
+}
 .Nav1 i{
     color: #9499c3;
     transform: scale(1.8);
@@ -112,15 +123,71 @@ footer{
     gap: 0.5em;
     line-height: 1.5em;
 }
-svg{
-    background-color: rgba(240, 240, 240, 0.055);
+.Box17{
+    margin-bottom: 5em;
 }
-:root{
-    --bar-color: #2e314d;
-    --fill-size: 20%
-    
+.Box17 span{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    top:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    font-size: 0.8em;
 }
-.ProgressBar{
+.Circle1{
+    fill: none;
+    stroke: #298bfe;
+    stroke-width: 10;
+    stroke-dasharray: var(--Porcen) 100;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    margin-bottom: -4.5em;
+}
+.Circle2{
+    fill: none;
+    stroke: #298bfe;
+    stroke-width: 10;
+    stroke-dasharray: var(--Porcen) 100;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    margin-bottom: -4.5em;
+}
+
+.Box16 span{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    top:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    font-size: 0.8em;
+}
+.Circle3{
+    fill: none;
+    stroke: #298bfe;
+    stroke-width: 10;
+    stroke-dasharray: var(--Porcen) 100;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    margin-bottom: -4.5em;
+}
+.Circle4{
+    fill: none;
+    stroke: #298bfe;
+    stroke-width: 10;
+    stroke-dasharray: var(--Porcen) 100;
+    transform-origin: 50%;
+    transform: rotate(-90deg);
+    margin-bottom: -4.5em;
+}
+.ProgressBar1,.ProgressBar2,.ProgressBar3,.ProgressBar4,.ProgressBar5,.ProgressBar6,.ProgressBar7{
     position: relative;
     width: 185px;
     height: 7px;
@@ -128,7 +195,6 @@ svg{
     border-radius: 2em;
     overflow: hidden;
 }
-
 .FirstProgressBar{
     display: flex;
     flex-direction: column;
@@ -149,14 +215,75 @@ svg{
     color: white;
     margin-bottom: 0.5em;
 }
-.ProgressBar::before{
+.ProgressBar1::before{
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: var(--bar-color);
     transform: translateX(-100%);
-    animation: fill-bar 0.8s 0.3s ease-in-out forwards;
+    animation: fill-bar1 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar2::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar2 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar3::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar3 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar4::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar4 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar5::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar5 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar6::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar1 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
+}
+.ProgressBar7::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bar-color);
+    transform: translateX(-100%);
+    animation: fill-bar3 0.8s 0.3s ease-in-out forwards;
+    transform: translateX(80%);
 }
 .Content{
     display: flex;
@@ -203,11 +330,41 @@ footer{
 }
 .CajaBottom i{
     transform: scale(2);
-    padding: 2em;
+    margin: 2em;
+    cursor: pointer;
 }
 
-@keyframes fill-bar {
+:root{
+    --bar-color: #2e314d;
+    --fill-size1: 20%;
+    --fill-size2: 40%;
+    --fill-size3: 60%;
+    --fill-size4: 80%;
+    --fill-size5: 100%
+}
+
+@keyframes fill-bar1{
     to{
-        transform: translateX(var(--fill-size));
+        transform: translateX(var(--fill-size1));
+    }
+}
+@keyframes fill-bar2 {
+    to{
+        transform: translateX(var(--fill-size2));
+    }
+}
+@keyframes fill-bar3 {
+    to{
+        transform: translateX(var(--fill-size3));
+    }
+}
+@keyframes fill-bar4 {
+    to{
+        transform: translateX(var(--fill-size4));
+    }
+}
+@keyframes fill-bar5 {
+    to{
+        transform: translateX(var(--fill-size5));
     }
 }

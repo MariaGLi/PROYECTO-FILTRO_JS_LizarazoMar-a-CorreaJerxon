@@ -4,6 +4,19 @@ const NameVehicle = document.getElementById("NameVehicle");
 const Box18 = document.querySelector(".Box18");
 const FirstProgressBar = document.querySelector(".FirstProgressBar");
 const SecondProgressBar = document.querySelector(".SecondProgressBar");
+const HistoryContent = document.querySelector(".HistoryContent");
+
+//Objects
+const RocketImg = document.getElementById("Rocket");
+
+//Icons
+const Check1 = document.getElementById("Check1");
+const Check2 = document.getElementById("Check2");
+const Check3 = document.getElementById("Check3");
+const Check4 = document.getElementById("Check4");
+const Check5 = document.getElementById("Check5");
+const Check6 = document.getElementById("Check6");
+const Check7 = document.getElementById("Check7");
 
 fetch("https://api.spacexdata.com/v4/rockets")
 .then(Res =>Res.json())
@@ -28,6 +41,11 @@ fetch("https://api.spacexdata.com/v4/rockets")
 
 
     //Content Boxes
+
+    HistoryContent.innerHTML = `<p>${Data[Position].description}</p>`;
+
+    RocketImg.src = Data[Position].flickr_images[0]
+
     Box18.innerHTML = `
         <h2>Engine</h2>
         <HR style="border-color:#9499c3;"></HR>
@@ -53,53 +71,57 @@ fetch("https://api.spacexdata.com/v4/rockets")
         <div class="Box8">
             <div class="Bar">
                 <p>Rocket Weight</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar1"></div>
             </div>
             <h3>${KgVehicle}</h3>  
         </div>
         <div class="Box9">
             <div class="Bar">
                 <p>Low Earth Orbit</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar2"></div>
             </div>
             <h3>${LowEarthOrbitVehicle}</h3>  
         </div>
         <div class="Box10">
             <div class="Bar">
                 <p>Rocket Diameter</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar3"></div>
             </div>
             <h3>${HeightVehicle}</h3>  
         </div>
         <div class="Box11">
             <div class="Bar">
                 <p>Diameter Rocket Shield</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar4"></div>
             </div>
             <h3>${HeightRocketShield}</h3>  
         </div>
         <div class="Box12">
             <div class="Bar">
                 <p>Height Rocket Shield</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar5"></div>
             </div>
             <h3>${DiameterRocketShield}</h3>  
         </div>
     `
+
     SecondProgressBar.innerHTML = `
         <div class="Box13">
             <div class="Bar">
                 <p>Thrust Sea Level<p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar6"></div>
             </div>
             <h3>${ThrustSeaLevel}</h3>
         </div>
         <div class="Box14">
             <div class="Bar">
                 <p>Thrust Vacuum</p>
-                <div class="ProgressBar"></div>
+                <div class="ProgressBar7"></div>
             </div>
             <h3>${ThrustVacuum}</h3>
         </div>
     `
 })
+function WaitsColor(){
+    
+}
