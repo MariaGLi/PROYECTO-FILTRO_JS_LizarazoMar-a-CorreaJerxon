@@ -12,17 +12,18 @@
 body{
     background-image: url(/Storage/img/Background.png);
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .Cuerpo{
     display: flex;
 }
 .Contents{
+    width: 67vw;
     display: flex;
     flex-direction: column;
 }
 .HistoryContent{
-    width: 50em;
+    width: 50vw;
     text-align: center;
 }
 .Nav1{
@@ -38,20 +39,20 @@ body{
     color: #9499c3;
 }
 header{
-    width: 84em;
+    width: 60vw;
     height: 6em;
     text-align: center;
     padding-top: 2em;
 }
 .Head{
-    width: 84em;
+    width: 60vw;
     height: 12em;
     display: flex;
     justify-content: center;
     gap: 1em;
 }
 .Content{
-    width: 84em;
+    width: 84vw;
     height: 35em;
     padding: 0em 4em;
     margin-top: 2em;
@@ -275,7 +276,7 @@ footer{
     border-bottom: 9em solid #1a1c48;
 }
 .CajaBottom{
-    width: 25vw;
+    width: 30em;
     height: 5em;
     background-color: #1a1c48;
     margin-top:-1em;
