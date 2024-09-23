@@ -12,7 +12,7 @@
 body{
     background-image: url(/Storage/img/Background.png);
     background-size: cover;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .Cuerpo{
     display: flex;
@@ -60,7 +60,7 @@ header{
 
 .Rocket{
     margin-top: -5em;
-    margin-left: 3em;
+    margin-right: 36em;
     display: flex;
     flex-direction: column;
 }
@@ -158,7 +158,7 @@ footer{
     margin-bottom: -4.5em;
 }
 .Box16{
-    margin-right: 20em;
+    
     height: 20em;
     justify-content: center;
     flex-direction: column;
@@ -275,6 +275,9 @@ footer{
     justify-content: center;
     border-bottom: 9em solid #1a1c48;
 }
+footer i{
+    transform: scale(2);
+}
 .CajaBottom{
     width: 30em;
     height: 5em;
@@ -323,7 +326,39 @@ footer{
     --fill-size4: 80%;
     --fill-size5: 100%
 }
-
+dialog{
+    margin: 30vh auto;
+    background-color: #ffffff;
+    border: none;
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    border-radius:1em;
+}
+dialog img{
+    width: 15vw;
+}
+.CajaModal{
+    display: flex;
+    justify-content: space-around;
+}
+dialog button{
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: none;
+    background-color: #298bfe;
+    font-weight: bold;
+}
+.Navigation{
+    margin-top: 12em;
+    display: flex;
+    gap: 0.4em;
+}
+.Navigation p{
+    border: 1px solid white;
+    padding: 0.5em 0.7em;
+    cursor: pointer;
+}
 @keyframes fill-bar1{
     to{
         transform: translateX(var(--fill-size1));
