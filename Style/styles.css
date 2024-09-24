@@ -1,0 +1,148 @@
+@font-face {
+    font-family: Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Light;
+    overflow: hidden;
+    background-image: url(../Img/Background.png);
+}
+.container{
+    display: flex;
+    color: white;
+}
+.caja1{
+    width:70vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;  
+    justify-content: end;  
+}
+.contentSuper{
+    width:65vw;
+    height: 30vh;
+    padding-top: 5em;
+}
+.contentSuper h1{
+    font-size: 3.5em;
+}
+.contentSuper p{
+    font-size: 4em;
+}
+.content{
+    width:65vw;
+    height: 30vh;
+    font-size: 1.5em;
+}
+.caja{
+    width:65vw;
+    height: 20vh;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+}
+.twit{
+    display: flex;
+    justify-content: space-evenly;
+}
+.twit a{
+    text-decoration: none;
+    color: white;
+}
+.a1{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 13em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.a1{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.a1:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.a2{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 13em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.a2{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.a2:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn a{
+    text-decoration: none;
+}
+.boton_next{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.url::after{
+    content: "Camper: María Lizarazo";
+}
+.url2::after{
+    content: "Camper: Jerxon Correa";
+}
+.boton_next{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.boton_next:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.imagen{
+    width: 30vw;
+    height: 100vh;
+}
+.imagen img{
+    width: 35em;
+    height:55em;
+    margin-top: 5em;
+    transform: rotate(-45deg);
+}

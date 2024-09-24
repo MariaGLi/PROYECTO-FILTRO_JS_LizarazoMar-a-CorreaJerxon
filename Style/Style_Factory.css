@@ -30,8 +30,8 @@ body{
     width: 15vw;
     display: flex;
     flex-direction: column;
-    gap: 2em;
-    padding-top: 6em;
+    gap: 3em;
+    padding-top: 17em;
     padding-left: 2em;
 }
 .Nav1 p{
@@ -44,7 +44,7 @@ header{
     padding-top: 2em;
 }
 .Head{
-    width: 84em;
+    width: 82em;
     height: 10em;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ header{
     padding-left: 15em;
 }
 .Rocket{
-    margin-top: -2em;
+    margin-top: -0.7em;
     margin-left: 3em;
     display: flex;
     flex-direction: column;
@@ -73,7 +73,7 @@ header{
     height: 30em;
     border-radius: 2em;
     box-shadow: 7px 7px 23px #1a1c48;
-    transition: all 900ms;
+    transition: all 2s;
     cursor: pointer;
 }
 #Rocket:hover{
@@ -98,9 +98,9 @@ footer{
     transform: scale(1.8);
     padding-top: 0.6em;
 }
-.Box1, .Box2, .Box3, .Box4, .Box5, .Box6,.Box7{
+.Box1, .Box2, .Box3, .Box4{
     display: flex;
-    gap: 0.5em;
+    gap: 1em;
     line-height: 1.5em;
 }
 .Content{
@@ -114,11 +114,18 @@ footer{
     flex-direction: column;
     gap: 2em;
     left: 84vw;
-    position: fixed;
+    position: absolute;
     padding-top: 6em;
     padding-left: 2em;
-    background-color: yellowgreen;
-    z-index: 2;
+}
+#imagen{
+    width: 200px;
+    height: 300px;
+    transform: translateY(-211.9em);
+    animation: BarraIzq 25s linear infinite;
+    z-index: -2;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #0000008c;
 }
 footer{
     display: flex;
@@ -164,4 +171,9 @@ footer{
     transform: scale(2);
     margin: 2em;
     cursor: pointer;
+}
+@keyframes BarraIzq {
+    to{
+        transform: translateY(80em);
+    }
 }
