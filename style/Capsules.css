@@ -14,6 +14,9 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+header img{
+    width: 200px;
+}
 .Contents{
     width: 100vw;
     display: flex;
@@ -28,20 +31,35 @@ header{
     display: flex;
     justify-content: center;
 }
+.BoxRight, .BoxLeft{
+    width: 20em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    text-align: center;
+    margin-top: 10em;
+    text-shadow: 1px 5px 10px black;
+}
 .HistoryContent{
     display: flex;
     flex-direction: column;
 }
 #Capsule{
-    margin-bottom: -7em;
+    margin-bottom: -6em;
 }
 .Content{
-    width: 100vw;
-    margin-bottom: 5em;
+    margin: 0 auto;
+    width: 53%;
+    height: 7em;
+    margin-bottom: 2em;
     display: flex;
-    justify-content: space-evenly;
+    gap: 1em;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
-
+.Content::-webkit-scrollbar{
+    opacity: 0;
+}
 footer{
     display: flex;
     justify-content: center;
@@ -92,7 +110,7 @@ footer i{
 }
 .BoxInformation{
     background-color: #1a1c48;
-    width: 15em;
+    min-width: 15em;
     height: 5em;
     display: flex;
     justify-content: center;
