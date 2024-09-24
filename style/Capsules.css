@@ -14,259 +14,34 @@ body{
     background-size: cover;
     overflow: hidden;
 }
-.Cuerpo{
-    display: flex;
-}
 .Contents{
-    width: 65vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
-}
-.HistoryContent{
-    width: 50vw;
-    text-align: center;
-}
-.Nav1{
-    height: 47em;
-    width: 15vw;
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    padding-top: 6em;
-    padding-left: 2em;
-}
-.Nav1 p{
-    color: #9499c3;
 }
 header{
-    width: 60vw;
-    height: 6em;
     text-align: center;
     padding-top: 2em;
+    margin-bottom: -1em;
 }
 .Head{
-    width: 60vw;
-    height: 12em;
     display: flex;
     justify-content: center;
-    gap: 1em;
 }
-.Content{
-    width: 84vw;
-    height: 35em;
-    padding: 0em 4em;
-    margin-top: 2em;
-}
-
-.Rocket{
-    margin-top: -5em;
-    margin-right: 36em;
+.HistoryContent{
     display: flex;
     flex-direction: column;
 }
-#Rocket{
-    z-index: 3;
-    width: 30em;
-    height: 20em;
-    border-radius: 2em;
-    box-shadow: 5px 5px 20px #1a1c48;
+#Capsule{
+    margin-bottom: -7em;
 }
-#Shadow{
-    position: relative;
-    z-index: 1;
-}
-.Box17,.Box16{
-    display: flex;
-    gap: 1em;
-}
-.Box18{
-    width: 15em;
-    margin-top: 2em;
-}
-.Box18 h2{
-    line-height: 2.5em;
-    font-weight: 300;
-    color: #9499c3;
-}
-.Text p{
-    color: #9499c3;
-}
-.Text{
-    display: flex;
-    line-height: 2em;
-}
-.MainText{
-    width: 10em;
-}
-.Nav2{
-    height: 47em;
-    width: 15vw;
-    padding-top: 6em;
-    margin-right: 2em;
-}
-
-.Nav1 h5, p{
-    color: #9499c3;
-}
-.Nav1 P{
-    opacity: 40%;
-}
-.Nav1 i{
-    color: rgb(219, 157, 41);
-    transform: scale(1.8);
-    padding-top: 0.6em;
-}
-.Box1, .Box2, .Box3, .Box4, .Box5, .Box6,.Box7{
-    display: flex;
-    gap: 0.5em;
-    line-height: 1.5em;
-}
-.Box17{
+.Content{
+    width: 100vw;
     margin-bottom: 5em;
-}
-.Box17 span{
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    left: 0%;
-    top:0%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: rotate(90deg);
-    font-size: 0.8em;
-}
-.Circle1{
-    fill: none;
-    stroke: #298bfe;
-    stroke-width: 10;
-    stroke-dasharray: var(--Porcen) 100;
-    transform-origin: 50%;
-    transform: rotate(-90deg);
-    margin-bottom: -4.5em;
-}
-.Circle2{
-    fill: none;
-    stroke: #298bfe;
-    stroke-width: 10;
-    stroke-dasharray: var(--Porcen) 100;
-    transform-origin: 50%;
-    transform: rotate(-90deg);
-    margin-bottom: -4.5em;
-}
-.Box16{
-    
-    height: 20em;
-    justify-content: center;
-    flex-direction: column;
-}
-.Box16 i{
-    transform: scale(2);
-    cursor: pointer;
+    justify-content: space-evenly;
 }
 
-.ProgressBar1,.ProgressBar2,.ProgressBar3,.ProgressBar4,.ProgressBar5,.ProgressBar6,.ProgressBar7{
-    position: relative;
-    width: 10vw;
-    height: 7px;
-    background-color: #298bfe;
-    border-radius: 2em;
-    overflow: hidden;
-}
-.FirstProgressBar{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5em;
-}
-.SecondProgressBar{
-    display: flex;
-    flex-direction: column;
-    gap: 2.5em;
-    margin-top: 8em;
-}
-.Box8,.Box9,.Box10,.Box11,.Box12,.Box13,.Box14{
-    display: flex;
-    align-items: flex-end;
-    gap: 1em;
-}
-.Nav2,p{
-    color: white;
-    margin-bottom: 0.5em;
-}
-.ProgressBar1::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar1 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar2::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar2 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar3::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar3 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar4::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar4 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar5::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar5 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar6::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar1 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.ProgressBar7::before{
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bar-color);
-    transform: translateX(-100%);
-    animation: fill-bar3 0.8s 0.3s ease-in-out forwards;
-    transform: translateX(80%);
-}
-.Content{
-    display: flex;
-    justify-content: space-between;
-}
 footer{
     display: flex;
     justify-content: center;
@@ -315,88 +90,15 @@ footer i{
     margin: 2em;
     cursor: pointer;
 }
-
-:root{
-    --bar-color: #2e314d;
-    --fill-size1: 20%;
-    --fill-size2: 40%;
-    --fill-size3: 60%;
-    --fill-size4: 80%;
-    --fill-size5: 100%
-}
-dialog{
-    margin: 30vh auto;
-    background-color: #ffffff;
-    border: none;
-    width: 40vw;
-    height: 40vh;
-    text-align: center;
-    border-radius:1em;
-}
-dialog img{
-    width: 15vw;
-}
-.CajaModal{
+.BoxInformation{
+    background-color: #1a1c48;
+    width: 15em;
+    height: 5em;
     display: flex;
-    justify-content: space-around;
-}
-dialog button{
-    padding: 1em 2em;
-    border-radius: 2em;
-    border: none;
-    background-color: #298bfe;
-    font-weight: bold;
-}
-.Navigation{
-    margin-top: 10em;
-    display: flex;
-    gap: 0.4em;
-}
-.Navigation p{
-    border: 1px solid white;
-    padding: 0.5em 0.7em;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 1px 4px 10px black;
     cursor: pointer;
-}
-
-
-@media only screen and (max-width:1600px){
-    body{
-        overflow: visible;
-        overflow-x: hidden;
-    }
-    footer{
-        display: flex;
-        justify-content: center;
-        border-bottom: 2em solid #1a1c48;
-        width: 100vw;
-        height: 5em;
-    }
-}
-
-
-
-@keyframes fill-bar1{
-    to{
-        transform: translateX(var(--fill-size1));
-    }
-}
-@keyframes fill-bar2 {
-    to{
-        transform: translateX(var(--fill-size2));
-    }
-}
-@keyframes fill-bar3 {
-    to{
-        transform: translateX(var(--fill-size3));
-    }
-}
-@keyframes fill-bar4 {
-    to{
-        transform: translateX(var(--fill-size4));
-    }
-}
-@keyframes fill-bar5 {
-    to{
-        transform: translateX(var(--fill-size5));
-    }
 }

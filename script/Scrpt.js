@@ -47,6 +47,8 @@ fetch("https://api.spacexdata.com/v4/rockets")
     Browse.forEach(Obj =>{
         Obj.addEventListener("click",()=>{
             Obj.style="background-color: #1e2031;"
+            let SumVariable =  Obj.getAttribute('data-id')
+            Operations(SumVariable-1)
         })
     })
 
