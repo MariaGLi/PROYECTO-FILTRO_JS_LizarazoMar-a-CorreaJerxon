@@ -67,7 +67,7 @@ header{
 #Rocket{
     z-index: 3;
     width: 30em;
-    height: 30em;
+    height: 20em;
     border-radius: 2em;
     box-shadow: 5px 5px 20px #1a1c48;
 }

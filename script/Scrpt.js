@@ -13,15 +13,8 @@ const NameVehicle = document.getElementById("NameVehicle");
 const Left = document.getElementById("Left");
 const Right = document.getElementById("Right");
 const BotonCerrarModal=document.getElementById("CerrarModal");
-
-//Icons
-const Check1 = document.getElementById("Check1");
-const Check2 = document.getElementById("Check2");
-const Check3 = document.getElementById("Check3");
-const Check4 = document.getElementById("Check4");
-const Check5 = document.getElementById("Check5");
-const Check6 = document.getElementById("Check6");
-const Check7 = document.getElementById("Check7");
+const PCheck = document.querySelectorAll("#PCheck");
+const Check = document.querySelectorAll("#Check");
 
 //Variables
 let SumVariable = 0
@@ -177,5 +170,26 @@ fetch("https://api.spacexdata.com/v4/rockets")
                 <p>${Data[Position].engines.layout}</p>
             </div>
         `
-        }   
+        }
+        setInterval(ColorCheckesG,2000)
+        setInterval(Checkes,5000)
+        
 })
+function Checkes(){
+    PCheck.forEach(Charge =>{
+        Charge.textContent="Normal"
+    })
+    
+}
+function ColorCheckesG(){
+    Check.forEach(Checks=>{
+        Checks.style ="color:green"
+    })
+    setInterval(ColorCheckesN,3000)
+}
+function ColorCheckesN(){
+    Check.forEach(Checks=>{
+        Checks.style ="color:#9499c3"
+    })
+}
+
