@@ -8,8 +8,10 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Light;
+    width: 100vw;
+    height: 100vh;
     overflow: hidden;
+    font-family: Light;
     background-image: url(../Img/Background.png);
 }
 .container{
@@ -145,4 +147,82 @@ body{
     height:55em;
     margin-top: 5em;
     transform: rotate(-45deg);
+}
+@media only screen and (max-width: 430px){
+    body{
+        box-sizing: border-box;
+        background-image: none;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background: linear-gradient(217deg, #181b3a, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #404790, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #2e3157, rgba(0,0,255,0) 70.71%),
+            linear-gradient(336deg, #396392, rgba(0,0,255,0) 70.71%);
+    }
+    .container{
+        margin-left: 5em;
+        display: grid;
+        justify-content: center;
+    }
+    .contentSuper{
+        height: 27vh;
+        width: 80vw;
+        gap: 0.7em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: -7em;
+    }
+    .contentSuper h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .contentSuper p{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .content{
+        width: 80vw;
+        height: 40vh;
+        padding-top: 5em;
+        margin-top: -9em;
+    }
+    .content p{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: -4em;
+    }
+    .imagen img{
+        display: none;
+    }
+    .caja{
+        width: 80vw;
+        height: 15vh;
+        gap: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -10em;
+    }
+    .twit{
+        gap: 2em;
+    }
+    .a1{
+        width: 9em;
+        font-size: 1em;
+    }
+    .a2{
+        width: 8.7em;
+        font-size: 1em;
+    }
+    .url::after{
+        content: "María Lizarazo";
+    }
+    .url2::after{
+        content: "Jerxon Correa";
+    }
+    .boton_next{
+        width: 8em;
+        font-size: 1em;
+    }
 }
