@@ -15,7 +15,6 @@ body{
     overflow: hidden;
 }
 .Contents{
-    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 2em;
@@ -26,21 +25,33 @@ header{
     margin-bottom: -1em;
 }
 .text_History{
-    background-color: rgb(223, 129, 7);
-    height: 3em;
+    display: flex;
+    justify-content: center;
+}
+.text{
+    height: 7vh;
     text-align: center;
+    font-size: 1.3em;
+    width: 90vw;
 }
 .Head{
     display: flex;
     justify-content: space-around;
-    background-color: aliceblue;
-    height: 38em;
+    height: 65vh;
+}
+.Head i{
+    font-size: 2.5em;
+    color: white;
+    margin-top: 7.2em;
 }
 .HistoryContent{
     display: flex;
     flex-direction: column;
 }
 #imagen{
+    width: 30em;
+    border-radius: 5em;
+    box-shadow: 7px 7px 23px black;
 }
 .Content{
     width: 100vw;
@@ -48,13 +59,13 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-
 footer{
     display: flex;
     justify-content: center;
-    border-bottom: 6em solid #1a1c48;
+    border-bottom: 7.5em solid #1a1c48;
     width: 100vw;
     height: 10em;
+    margin-top: -1.2em;
 }
 footer i{
     transform: scale(2);
@@ -98,9 +109,7 @@ footer i{
     cursor: pointer;
 }
 .cajaLeft{
-    height: 38em;
-    background-color: aqua;
-    
+    height: 65vh;
 }
 .BoxLeft{
     background-color: #1a1c48;
@@ -112,11 +121,11 @@ footer i{
     align-items: center;
     border-radius: 1em;
     box-shadow: 1px 4px 10px black;
-    cursor: pointer;
+    margin-top: 30em;
+    gap: 0.7em;
 }
 .cajaRight{
-    height: 38em;
-    background-color: aqua;
+    height: 65vh;
 }
 .BoxRight{
     background-color: #1a1c48;
@@ -128,5 +137,6 @@ footer i{
     align-items: center;
     border-radius: 1em;
     box-shadow: 1px 4px 10px black;
-    cursor: pointer;
+    margin-top: 30em;
+    gap: 0.7em;
 }
