@@ -132,6 +132,21 @@ footer i{
     box-shadow: 1px 4px 10px black;
     cursor: pointer;
 }
+
+@media only screen and (max-width:1600px){
+    body{
+        overflow: visible;
+        overflow-x: hidden;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        border-bottom: 2em solid #1a1c48;
+        width: 100vw;
+        height: 5em;
+    }
+}
+
 @media only screen and (max-width:430px) {
     .Head{
         flex-direction: column;
