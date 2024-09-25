@@ -31,6 +31,6 @@ function Company(){
         date.innerHTML=`
         <p>${data.founded}</p>
         `
-    })
+    });
 }
 Company()
