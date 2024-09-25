@@ -155,7 +155,6 @@ header{
     margin-bottom: -4.5em;
 }
 .Box16{
-    
     height: 20em;
     justify-content: center;
     flex-direction: column;
@@ -370,6 +369,129 @@ dialog button{
         border-bottom: 2em solid #1a1c48;
         width: 100vw;
         height: 5em;
+    }
+}
+@media only screen and (max-width:430px) {
+    .Cuerpo{
+        flex-direction: column;
+    }
+    .Nav1{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 0em;
+        padding-top: 2em;
+        padding-left: 0em;
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(37,40,60,1) 100%);
+    }
+    .Box1, .Box2, .Box3, .Box4, .Box5, .Box6,.Box7{
+        width: 10em;
+    }
+    .HistoryContent{
+        width: 90vw;
+    }
+    .Contents{
+        width: 100vw;
+        text-align: center;
+    }
+    .Content{
+        flex-direction: column;
+    }
+    header{
+        width: 100vw;
+        height: 6em;
+        text-align: center;
+        padding-top: 2em;
+    }
+    .Head{
+        width: 100vw;
+    }
+    .Box18{
+        margin-bottom: 3em;
+    }
+    .Rocket{
+        margin-top: 0em;
+        margin-left: -1.5em;
+        margin-right: 0em;
+        display: flex;
+        flex-direction: column;
+    }
+    #Shadow{
+        display: none;
+    }
+    #Rocket{
+        z-index: 3;
+        width: 20em;
+        height: 20em;
+        border-radius: 2em;
+        box-shadow: 5px 5px 20px #1a1c48;
+    }
+    .Nav2{
+        height: 47em;
+        width: 90vw;
+        margin-top: -7em;
+        justify-content: center;
+    }
+    .FirstProgressBar{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 12em;
+        padding-top: 0em;
+        padding-left: 0em;
+    }
+    .FirstProgressBar h3{
+        display: none;
+    }
+    .CajaBottom::after{
+        display: none;
+    }
+    .CajaBottom::before{
+        display: none;
+    }
+    .Box8,.Box9,.Box10,.Box11,.Box12,.Box13,.Box14{
+        width: 10em;
+    }
+    .ProgressBar1,.ProgressBar2,.ProgressBar3,.ProgressBar4,.ProgressBar5,.ProgressBar6,.ProgressBar7{
+        width: 20vw;
+    }
+    .SecondProgressBar{
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 1em;
+        margin-top: 4em;
+        padding-top: 0em;
+        padding-left: 0em;
+    }
+    .SecondProgressBar h3{
+        display: none;
+    }
+    .CajaBottom{
+        text-align: center;
+    }
+    .Box17{
+        margin-left: -1em;
+        margin-top: -5em;
+    }
+    .Navigation{
+        margin-top: 5em;
+        margin-left: 7em;
+    }
+    dialog{
+        display: none;
     }
 }
 

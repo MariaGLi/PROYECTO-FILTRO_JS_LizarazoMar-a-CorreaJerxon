@@ -11,18 +11,36 @@ fetch("https://api.spacexdata.com/v4/capsules")
     let Contador = 0
     Data.forEach(Capsulas => {
         Contador += 1
-        Content.innerHTML += `
+        if(Capsulas.status === "retired"){
+            Content.innerHTML += `
             <div data-id="${Contador}" class="BoxInformation">
                 <h3>${Capsulas.serial}</h3>
-                <p>${Capsulas.status}</p>
+                <p style="color:red">${Capsulas.status}</p>
             </div>
-        `
+            `
+        }
+        else if(Capsulas.status === "active"){
+            Content.innerHTML += `
+            <div data-id="${Contador}" class="BoxInformation">
+                <h3>${Capsulas.serial}</h3>
+                <p style="color:green">${Capsulas.status}</p>
+            </div>
+            `
+        }
+        else if(Capsulas.status === "unknown"){
+            Content.innerHTML += `
+            <div data-id="${Contador}" class="BoxInformation">
+                <h3>${Capsulas.serial}</h3>
+                <p style="color:orange">${Capsulas.status}</p>
+            </div>
+            `
+        }
     });
 
     document.querySelectorAll(".BoxInformation").forEach(SelectionCapsules=>{
         SelectionCapsules.addEventListener("click",()=>{
             let Selection = SelectionCapsules.getAttribute("data-id")
-            PrintData(Selection)
+            PrintData(Selection-1)
         })   
     })
 

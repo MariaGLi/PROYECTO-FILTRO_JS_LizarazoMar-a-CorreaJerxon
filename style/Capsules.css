@@ -14,6 +14,9 @@ body{
     background-size: cover;
     overflow: hidden;
 }
+#NameVehicle{
+    font-size: 2em;
+}
 header img{
     width: 200px;
 }
@@ -58,8 +61,17 @@ header{
     overflow-x: auto;
 }
 .Content::-webkit-scrollbar{
-    opacity: 0;
+    width: 15px;
 }
+.Content::-webkit-scrollbar-track{
+    background-color: #212241;
+    border-radius: 2em;
+}
+.Content::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 2em;
+}
+
 footer{
     display: flex;
     justify-content: center;
@@ -119,4 +131,31 @@ footer i{
     border-radius: 1em;
     box-shadow: 1px 4px 10px black;
     cursor: pointer;
+}
+@media only screen and (max-width:430px) {
+    .Head{
+        flex-direction: column;
+    }
+    .BoxRight, .BoxLeft{
+        width: 100vw;
+    }
+    body{
+        overflow-y: auto;
+    }
+    .CajaBottom{
+        text-align: center;
+    }
+    .CajaBottom::after{
+        display: none;
+    }
+    .CajaBottom::before{
+        display: none;
+    }
+    .Content{
+        width: 100vw;
+        margin-top: 2em;
+    }
+    .BoxRight, .BoxLeft{
+        margin-top: 2em;
+    }
 }
