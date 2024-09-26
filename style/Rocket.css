@@ -138,7 +138,7 @@ header{
 }
 .Circle1{
     fill: none;
-    stroke: #298bfe;
+    stroke: #ffee05;
     stroke-width: 10;
     stroke-dasharray: var(--Porcen) 100;
     transform-origin: 50%;
@@ -147,7 +147,7 @@ header{
 }
 .Circle2{
     fill: none;
-    stroke: #298bfe;
+    stroke: #48ff00;
     stroke-width: 10;
     stroke-dasharray: var(--Porcen) 100;
     transform-origin: 50%;
@@ -272,6 +272,7 @@ footer{
     border-bottom: 6em solid #1a1c48;
     width: 100vw;
     height: 10em;
+    margin-top: -2em;
 }
 footer i{
     transform: scale(2);

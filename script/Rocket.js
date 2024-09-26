@@ -144,7 +144,7 @@ fetch("https://api.spacexdata.com/v4/rockets")
                     </svg>
                     <span>50%</span>
                 </div>
-                <div class="Circle2" style="--Porcen: 120">
+                <div class="Circle2" style="--Porcen: 260">
                     <svg width="142px" heigth="152px">
                         <circle r="50" cx="50%" cy="50%" pathlengh="100"></circle>
                     </svg>
