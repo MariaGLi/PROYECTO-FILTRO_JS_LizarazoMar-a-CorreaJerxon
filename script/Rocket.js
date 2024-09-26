@@ -34,11 +34,16 @@ fetch("https://api.spacexdata.com/v4/rockets")
     
     document.addEventListener("keydown",(keys)=>{
         if(keys.key === "ArrowRight"){
-            SumVariable +=1
+            if(SumVariable < 3){
+                SumVariable +=1
+            }
             Operations(SumVariable)
         }
         else if(keys.key === "ArrowLeft"){
-            SumVariable-=1
+            if(SumVariable >= 1){
+                SumVariable-=1
+            }
+            
             Operations(SumVariable)
         }
     })
@@ -120,11 +125,32 @@ fetch("https://api.spacexdata.com/v4/rockets")
 
         document.addEventListener("keydown",(keyss) => {
             if(keyss.key === "ArrowUp"){
-                PositionImg +=1
+                if(SumVariable = 0){
+                    if(PositionImg < 1){
+                        PositionImg +=1
+                    }
+                }
+                else if(SumVariable = 1){
+                    if(PositionImg < 2){
+                        PositionImg +=1
+                    }
+                }
+                else if(SumVariable = 2){
+                    if(PositionImg < 3){
+                        PositionImg +=1
+                    }
+                }
+                else if(SumVariable = 3){
+                    if(PositionImg < 4){
+                        PositionImg +=1
+                    }
+                }
                 RocketImg.src = Data[Position].flickr_images[PositionImg]
             }
             else if(keyss.key === "ArrowDown"){
-                PositionImg -=1
+                if (PositionImg > 0){
+                    PositionImg -=1
+                }
                 RocketImg.src = Data[Position].flickr_images[PositionImg]
             }
         })  
@@ -148,7 +174,7 @@ fetch("https://api.spacexdata.com/v4/rockets")
                     <svg width="142px" heigth="152px">
                         <circle r="50" cx="50%" cy="50%" pathlengh="100"></circle>
                     </svg>
-                    <span>50%</span>
+                    <span>80%</span>
                 </div>
         `
 

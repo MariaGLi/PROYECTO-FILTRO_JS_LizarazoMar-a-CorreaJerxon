@@ -38,13 +38,13 @@ header{
 .Head{
     display: flex;
     justify-content: space-around;
-    height: 65vh;
+    align-items: center;
 }
 .Head i{
-    font-size: 2.5em;
-    color: white;
-    margin-top: 7.2em;
+    transform: scale(2.5);
+    cursor: pointer;
 }
+
 .HistoryContent{
     display: flex;
     flex-direction: column;
@@ -110,12 +110,7 @@ footer i{
     margin: 2em;
     cursor: pointer;
 }
-.cajaLeft{
-    height: 65vh;
-    display: flex;
-    justify-content: center;
 
-}
 .BoxLeft{
     background-color: #1a1c48;
     width: 15em;
@@ -128,9 +123,6 @@ footer i{
     box-shadow: 1px 4px 10px black;
     margin-top: 30em;
     gap: 0.7em;
-}
-.cajaRight{
-    height: 65vh;
 }
 .BoxRight{
     background-color: #1a1c48;
@@ -195,16 +187,19 @@ dialog button{
         display: flex;
         flex-direction: column;
         height: 40em;
+        margin: 0 auto;
+        gap: 10em;
     }
     .cajaLeft{
         width: 100vw;
         height: 7vh;
-        margin-top: -9em;
+        margin-top: -5em;
     }
     .BoxLeft{
         width: 10em;
         height: 4em;
         margin-top: -0em;
+        margin-left: 8em;
     }
     .Contents{
         width: 100vw;
@@ -229,10 +224,12 @@ dialog button{
     #imagen{
         width: 85vw;
         height: 14em;
-        margin-top: -11em;
+        margin-top: -2em;
     }
     .Head i{
-        display: none;
+        margin-top: -20em;
+        transform: rotate(90deg);
+        scale: 2;
     }
     footer{
         display: flex;
