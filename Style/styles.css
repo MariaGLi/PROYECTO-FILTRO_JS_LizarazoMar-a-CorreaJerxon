@@ -231,6 +231,7 @@ body{
         height: 17vh;
         margin-top: -68.1em;
         margin-left: -5em;
+        display: block  ;
     }
     #loguito{
         width: 27em;

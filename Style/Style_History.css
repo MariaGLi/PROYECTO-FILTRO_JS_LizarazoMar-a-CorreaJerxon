@@ -10,11 +10,10 @@
     font-family: "Roboto";
 }
 body{
-    width: 100vw;
-    height: 100vh;
     background-image: url(/Img/Background.png);
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
+    
 }
 .Contents{
     display: flex;
@@ -31,7 +30,7 @@ header{
     justify-content: center;
 }
 .text{
-    height: 7vh;
+    height: auto;
     text-align: center;
     font-size: 1.3em;
     width: 90vw;
@@ -49,7 +48,7 @@ header{
 .HistoryContent{
     display: flex;
     flex-direction: column;
-    padding-top: 11em;
+    padding-top: 3em;
 }
 #imagen{
     width: 30em;
@@ -68,7 +67,7 @@ footer{
     border-bottom: 7.5em solid #1a1c48;
     width: 100vw;
     height: 10em;
-    margin-top: -1.2em;
+    margin-top: 1.5em;
 }
 footer i{
     transform: scale(2);
@@ -150,14 +149,20 @@ footer i{
     body{
         width: 100vw;
         height: 100vh;
-        overflow: hidden;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: none;
+        background: linear-gradient(217deg, #181b3a, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #404790, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #2e3157, rgba(0,0,255,0) 70.71%),
+            linear-gradient(336deg, #396392, rgba(0,0,255,0) 70.71%);
     }
     header{
         width: 90vw;
     }
     .text{
         width: 90vw;
-        height: 43.5vh;
+        height: auto;
         font-size: 1.1em;
     }
     header h1{
@@ -166,6 +171,7 @@ footer i{
     .Head{
         display: flex;
         flex-direction: column;
+        height: 40em;
     }
     .cajaLeft{
         width: 100vw;
@@ -176,6 +182,9 @@ footer i{
         width: 10em;
         height: 4em;
         margin-top: -0em;
+    }
+    .Contents{
+        width: 100vw;
     }
     .cajaRight{
         height: 7vh;
@@ -196,6 +205,7 @@ footer i{
     }
     #imagen{
         width: 85vw;
+        height: 14em;
         margin-top: -11em;
     }
     .Head i{
@@ -208,5 +218,14 @@ footer i{
         width: 100vw;
         height: 10em;
         margin-top: -8em;
+    }
+    .CajaBottom{
+        text-align: center;
+    }
+    .CajaBottom::after{
+        display: none;
+    }
+    .CajaBottom::before{
+        display: none;
     }
 }
