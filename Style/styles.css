@@ -237,4 +237,7 @@ body{
         width: 27em;
         margin-top: -5.5em;
     }
+    .imagen{
+        display: none;
+    }
 }

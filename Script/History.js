@@ -5,12 +5,16 @@ var nextImage = 0
 const SoyModal = document.getElementById("Soymodal");
 const BotonCerrarModal=document.getElementById("CerrarModal");
 
-document.addEventListener("DOMContentLoaded",()=>{
-    SoyModal.showModal();
-    BotonCerrarModal.addEventListener("click",()=>{
-        SoyModal.close();
+var AnchoVentana = window.innerWidth
+
+if (AnchoVentana > 500){
+    document.addEventListener("DOMContentLoaded",()=>{
+        SoyModal.showModal();
+        BotonCerrarModal.addEventListener("click",()=>{
+            SoyModal.close();
+        })
     })
-})
+}
 
 function Company(){
     fetch(url)

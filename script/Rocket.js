@@ -19,12 +19,18 @@ const Check = document.querySelectorAll("#Check");
 //Variables
 let SumVariable = 0
 
-document.addEventListener("DOMContentLoaded",()=>{
-    SoyModal.showModal();
-    BotonCerrarModal.addEventListener("click",()=>{
-        SoyModal.close();
+var AnchoVentana = window.innerWidth
+
+if (AnchoVentana > 500){
+    document.addEventListener("DOMContentLoaded",()=>{
+        SoyModal.showModal();
+        BotonCerrarModal.addEventListener("click",()=>{
+            SoyModal.close();
+        })
     })
-})
+}
+
+
 
 fetch("https://api.spacexdata.com/v4/rockets")
 .then(Res =>Res.json())
