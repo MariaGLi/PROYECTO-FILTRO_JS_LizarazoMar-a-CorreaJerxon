@@ -1,5 +1,6 @@
 let url = "https://api.spacexdata.com/v4/history"
 var nextArrow = 0
+var nextImage = 0
 
 function Company(){
     fetch(url)
@@ -13,6 +14,7 @@ function Company(){
         let utc =document.getElementById("date2")
         let arrow = document.getElementById("arrowLeft")
         let arrow2 = document.getElementById("arrowRight")
+        let image = document.getElementById("imagen")
 
         document.addEventListener("keydown",(keys)=>{
             if(keys.key === "ArrowRight"){
@@ -58,7 +60,22 @@ function Company(){
             `
         }
         Arrow()
+
+        arrow2.addEventListener('click', ()=>{
+            img(nextImage)
+            if(nextImage<=13){
+                nextImage += 1
+            }
+        });
+        function Image_Center(center){
+            image.innerHTML=`
+            <img id="imagen" src="${list[0]}">
+            `
+        }
+        Image_Center()
+
+        list["https://sxcontent9668.azureedge.us/cms-assets/assets/Mars_City_f1b8e54d3c.png","/Img/History/Falcon-1.jpg","https://cdn4.dogonews.com/images/9431701b-d0ae-4118-b654-912a4cdccd2e/27349970361_56da6d98dd_k.jpg","https://images.theconversation.com/files/336822/original/file-20200521-102637-1cyg1v1.jpg?ixlib=rb-4.1.0&rect=18%2C27%2C1964%2C2016&q=45&auto=format&w=926&fit=clip","https://m.media-amazon.com/images/I/617xOakmjpL._AC_SX679_.jpg","https://www.universetoday.com/wp-content/uploads/2015/12/orbcomm_sunrise_resized.jpg","https://www.wfla.com/wp-content/uploads/sites/71/2021/05/SpaceX-Falcon-9.jpg","https://i.pinimg.com/564x/5f/8a/61/5f8a613614dcab1664afda60fa0f99cb.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/CRS-8_%2826239020092%29.jpg/800px-CRS-8_%2826239020092%29.jpg","https://spacecenter.org/wp-content/uploads/2020/01/KSC-20200117-PH-SPX01_0001_medium-e1678724652148.jpg","https://petapixel.com/assets/uploads/2024/01/SpaceX-Rocket-Moon-800x420.jpg", "https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_G9_3_San_Miq_3043_Desktop_v2_eb5f1612d4.jpg","https://sxcontent9668.azureedge.us/cms-assets/assets/Flight_Test_2_Launch_Checkpoint_20231118_DSC_04675_2_723d9ca7e0.jpg","https://sxcontent9668.azureedge.us/cms-assets/assets/Homepage_Desktop_5ebdeb0c6c.webp","https://sxcontent9668.azureedge.us/cms-assets/assets/vlcsnap_2024_08_22_15h06m31s191_10dd6dd442.png"]
     })
 }
 Company()
-list["/Img/fh_performance.mp4","/Img/History/Falcon-1.jpg","https://cdn4.dogonews.com/images/9431701b-d0ae-4118-b654-912a4cdccd2e/27349970361_56da6d98dd_k.jpg","https://images.theconversation.com/files/336822/original/file-20200521-102637-1cyg1v1.jpg?ixlib=rb-4.1.0&rect=18%2C27%2C1964%2C2016&q=45&auto=format&w=926&fit=clip","https://m.media-amazon.com/images/I/617xOakmjpL._AC_SX679_.jpg","https://www.universetoday.com/wp-content/uploads/2015/12/orbcomm_sunrise_resized.jpg","https://www.wfla.com/wp-content/uploads/sites/71/2021/05/SpaceX-Falcon-9.jpg","https://i.pinimg.com/564x/5f/8a/61/5f8a613614dcab1664afda60fa0f99cb.jpg","https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/CRS-8_%2826239020092%29.jpg/800px-CRS-8_%2826239020092%29.jpg","https://spacecenter.org/wp-content/uploads/2020/01/KSC-20200117-PH-SPX01_0001_medium-e1678724652148.jpg"]
+
