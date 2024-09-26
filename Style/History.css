@@ -1,0 +1,257 @@
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto/Roboto-Light.ttf);
+}
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+body{
+    background-image: url(/Storage/img/Background.png);
+    background-size: cover;
+    overflow-x: hidden;
+    
+}
+.Contents{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+header{
+    text-align: center;
+    padding-top: 2em;
+    margin-bottom: -1em;
+}
+.text_History{
+    display: flex;
+    justify-content: center;
+}
+.text{
+    height: auto;
+    text-align: center;
+    font-size: 1.3em;
+    width: 90vw;
+}
+.Head{
+    display: flex;
+    justify-content: space-around;
+    height: 65vh;
+}
+.Head i{
+    font-size: 2.5em;
+    color: white;
+    margin-top: 7.2em;
+}
+.HistoryContent{
+    display: flex;
+    flex-direction: column;
+    padding-top: 3em;
+}
+#imagen{
+    width: 30em;
+    border-radius: 5em;
+    box-shadow: 7px 7px 23px black;
+}
+.Content{
+    width: 100vw;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-evenly;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    border-bottom: 7.5em solid #1a1c48;
+    width: 100vw;
+    height: 10em;
+    margin-top: 1.5em;
+}
+footer i{
+    transform: scale(2);
+}
+.CajaBottom{
+    width: 30em;
+    height: 5em;
+    background-color: #1a1c48;
+    border-top-left-radius: 17.5px;
+    border-top-right-radius: 17.5px;
+}
+.CajaBottom::after{
+    content: "";
+    position: relative;
+    margin-top: 10px;
+    right: 461px;
+    top: -48px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 68px solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 79px solid #1a1c48;
+}
+.CajaBottom::before{
+    content: "";
+    position: relative;
+    margin-top: 10px;
+    right: -473.7px;
+    top: -48px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 68px solid transparent;
+    border-bottom: 79px solid #1a1c48;
+}
+.CajaBottom i{
+    transform: scale(2);
+    margin: 2em;
+    cursor: pointer;
+}
+.cajaLeft{
+    height: 65vh;
+    display: flex;
+    justify-content: center;
+
+}
+.BoxLeft{
+    background-color: #1a1c48;
+    width: 15em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 1px 4px 10px black;
+    margin-top: 30em;
+    gap: 0.7em;
+}
+.cajaRight{
+    height: 65vh;
+}
+.BoxRight{
+    background-color: #1a1c48;
+    width: 15em;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1em;
+    box-shadow: 1px 4px 10px black;
+    margin-top: 30em;
+    gap: 0.7em;
+}
+dialog{
+    margin: 30vh auto;
+    background-color: #ffffff;
+    border: none;
+    width: 40vw;
+    height: 40vh;
+    text-align: center;
+    border-radius:1em;
+}
+dialog img{
+    width: 15vw;
+}
+.CajaModal{
+    display: flex;
+    justify-content: space-around;
+}
+dialog button{
+    padding: 1em 2em;
+    border-radius: 2em;
+    border: none;
+    background-color: #298bfe;
+    font-weight: bold;
+}
+@media only screen and (max-width: 430px){
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        background-image: none;
+        background: linear-gradient(217deg, #181b3a, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #404790, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #2e3157, rgba(0,0,255,0) 70.71%),
+            linear-gradient(336deg, #396392, rgba(0,0,255,0) 70.71%);
+    }
+    header{
+        width: 90vw;
+    }
+    .text{
+        width: 90vw;
+        height: auto;
+        font-size: 1.1em;
+    }
+    header h1{
+        font-size: 1.5em;
+    }
+    .Head{
+        display: flex;
+        flex-direction: column;
+        height: 40em;
+    }
+    .cajaLeft{
+        width: 100vw;
+        height: 7vh;
+        margin-top: -9em;
+    }
+    .BoxLeft{
+        width: 10em;
+        height: 4em;
+        margin-top: -0em;
+    }
+    .Contents{
+        width: 100vw;
+    }
+    .cajaRight{
+        height: 7vh;
+        margin-top: -20em;
+        display: flex;
+        justify-content: center;
+    }
+    .BoxRight{
+        width: 13em;
+        height: 4em;
+        margin-top: -0em;
+    }
+    .HistoryContent{
+        width: 100vw;
+        height: 22vh;
+        margin-top: -20em;
+        align-items: center;
+    }
+    #imagen{
+        width: 85vw;
+        height: 14em;
+        margin-top: -11em;
+    }
+    .Head i{
+        display: none;
+    }
+    footer{
+        display: flex;
+        justify-content: center;
+        border-bottom: 7.5em solid #1a1c48;
+        width: 100vw;
+        height: 10em;
+        margin-top: -8em;
+    }
+    .CajaBottom{
+        text-align: center;
+    }
+    .CajaBottom::after{
+        display: none;
+    }
+    .CajaBottom::before{
+        display: none;
+    }
+    dialog{
+        display: none;
+    }
+}

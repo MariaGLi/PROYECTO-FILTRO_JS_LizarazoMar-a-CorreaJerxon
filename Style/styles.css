@@ -1,0 +1,240 @@
+@font-face {
+    font-family: Light;
+    src: url(../font/Roboto/Roboto-Light.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Light;
+    background-image: url(/Storage/img/Background.png);
+}
+.container{
+    display: flex;
+    color: white;
+}
+.caja1{
+    width:70vw;
+    height: 100vh;
+    display: grid;
+    align-items: center;  
+    justify-content: end;  
+}
+.contentSuper{
+    width:65vw;
+    height: 30vh;
+    padding-top: 5em;
+}
+.contentSuper h1{
+    font-size: 3.5em;
+}
+.contentSuper p{
+    font-size: 4em;
+}
+.content{
+    width:65vw;
+    height: 30vh;
+    font-size: 1.5em;
+}
+.caja{
+    width:65vw;
+    height: 20vh;
+    display: grid;
+    gap: 20px;
+    align-items: center;
+}
+.twit{
+    display: flex;
+    justify-content: space-evenly;
+}
+.twit a{
+    text-decoration: none;
+    color: white;
+}
+.a1{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 13em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.a1{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.a1:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.a2{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 13em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.a2{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.a2:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+.btn a{
+    text-decoration: none;
+}
+.boton_next{
+    font-size: 1.5em;
+    cursor: pointer;
+    height: 2em;
+    width: 8em;
+    text-align: center;
+    padding: 10px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 7px;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+.url::after{
+    content: "Camper: María Lizarazo";
+}
+.url2::after{
+    content: "Camper: Jerxon Correa";
+}
+.boton_next{
+    background: rgb(0,140,255);
+    box-shadow: 0 0 25px rgb(0,140,255);
+}
+.boton_next:hover{
+    box-shadow: 0 0 2px rgb(0,140,255),
+                0 0 5px rgb(0,140,255),
+                0 0 10px rgb(0,140,255),
+                0 0 20px rgb(0,140,255);
+}
+.imagen{
+    width: 30vw;
+    height: 100vh;
+}
+.imagen img{
+    width: 35em;
+    height:55em;
+    margin-top: 5em;
+    transform: rotate(-45deg);
+}
+.logo{
+    display: none;
+}
+@media only screen and (max-width: 430px){
+    body{
+        box-sizing: border-box;
+        background-image: none;
+        background-repeat: no-repeat;
+        overflow: hidden;
+        background: linear-gradient(217deg, #181b3a, rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, #404790, rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, #2e3157, rgba(0,0,255,0) 70.71%),
+            linear-gradient(336deg, #396392, rgba(0,0,255,0) 70.71%);
+    }
+    .container{
+        display: grid;
+        margin-left: 5em;
+    }
+    .contentSuper{
+        height: 24vh;
+        width: 75vw;
+        gap: 0.7em;
+        display: flex;
+        flex-direction: column;
+        margin-top: -7em;
+    }
+    .contentSuper h1{
+        font-size: 2em;
+        text-align: center;
+    }
+    .contentSuper p{
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .content{
+        width: 75vw;
+        height: 40vh;
+        padding-top: 5em;
+        margin-top: -9em;
+    }
+    .content p{
+        font-size: 0.8em;
+        text-align: center;
+        margin-top: -4em;
+    }
+    .imagen img{
+        display: none;
+    }
+    .caja{
+        width: 75vw;
+        height: 15vh;
+        gap: 37px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: -14em;
+    }
+    .twit{
+        gap: 2em;
+    }
+    .a1{
+        width: 9em;
+        font-size: 1em;
+    }
+    .a2{
+        width: 8.7em;
+        font-size: 1em;
+    }
+    .url::after{
+        content: "María Lizarazo";
+    }
+    .url2::after{
+        content: "Jerxon Correa";
+    }
+    .boton_next{
+        width: 8em;
+        font-size: 1em;
+    }
+    .logo{
+        width: 100vw;
+        height: 17vh;
+        margin-top: -68.1em;
+        margin-left: -5em;
+        display: block  ;
+    }
+    #loguito{
+        width: 27em;
+        margin-top: -5.5em;
+    }
+}
