@@ -226,4 +226,19 @@ function ColorCheckesN(){
         Checks.style ="color:#9499c3"
     })
 }
-
+class CreateBoxThree extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML=`
+        <footer>  
+            <div class="CajaBottom">
+                <i class='bx bxs-rocket' style="color: red;"></i>
+                <a href="/public/Capsules.html"><i id="Capsule" class='bx bxs-diamond'></i></a>
+                <a href="/public/History.html"><i class='bx bxs-book'></i></a>
+                <a href="/public/Factory.html"><i class='bx bxs-factory'></i></a>
+            </div>
+        </footer>
+        `
+    }
+}
+customElements.define("box-three",CreateBoxThree)

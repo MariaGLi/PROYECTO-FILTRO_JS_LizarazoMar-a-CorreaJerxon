@@ -83,3 +83,20 @@ fetch("https://api.spacexdata.com/v4/capsules")
     }
     
 })
+
+class CreateBoxThree extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML=`
+        <footer>  
+            <div class="CajaBottom">
+                <a href="/public/Rocket.html"><i class='bx bxs-rocket'></i></a>
+                <i id="Capsule" class='bx bxs-diamond' style="color: red;"></i>
+                <a href="/public/History.html"><i class='bx bxs-book'></i></a>
+                <a href="/public/Factory.html"><i class='bx bxs-factory'></i></a>
+            </div>
+        </footer>
+        `
+    }
+}
+customElements.define("box-three",CreateBoxThree)

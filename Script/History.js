@@ -75,6 +75,9 @@ function Company(){
             utc.innerHTML=`
             <p id="textHistory">${data[nextArrow].event_date_utc}</p>
             `
+            image.addEventListener("click",()=>{
+                window.location.href = data[nextArrow].links.article
+            })
         }
         Arrow()
 
@@ -85,3 +88,19 @@ function Company(){
 Company()
 //History
 
+class CreateBoxThree extends HTMLElement{
+    constructor(){
+        super();
+        this.innerHTML=`
+        <footer>  
+            <div class="CajaBottom">
+                <a href="/public/Rocket.html"><i class='bx bxs-rocket'></i></a>
+                <a href="/public/Capsules.html"><i id="Capsule" class='bx bxs-diamond'></i></a>
+                <i class='bx bxs-book' style="color: red;"></i>
+                <a href="/public/Factory.html"><i class='bx bxs-factory'></i></a>
+            </div>
+        </footer>
+        `
+    }
+}
+customElements.define("box-three",CreateBoxThree)
